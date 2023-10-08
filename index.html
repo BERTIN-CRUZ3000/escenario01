@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Compras</title>
+</head>
+<body>
+    <h1>Calculadora de Compras</h1>
+    <label for="unidades">Cantidad de Unidades:</label><!--ingresa las unidades -->
+    <input type="number" id="unidades" required>
+    <br><br>
+    <label for="precio">Precio Unitario:</label><!--ingresa las precios -->
+    <input type="number" id="precio"  required>
+    <br><br>
+    <button onclick="calcularTotal()">Calcular Total</button>
+    <br>
+    <!--demuestra los resultados -->
+    <p>Subtotal: $<span id="subtotal">0.00</span></p> 
+    <p>Descuento: $<span id="descuento">0.00</span></p>
+    <p>Total a Pagar: $<span id="total">0.00</span></p>
+    
+    <script src="js/precio.js"></script>
+</body>
+</html>
